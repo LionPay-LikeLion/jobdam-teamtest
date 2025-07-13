@@ -11,5 +11,6 @@ spring:
     driver-class-name: ${DB_DRIVER_CLASS_NAME}
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: update  # in development (auto table create/modify)
+      # ddl-auto: none  # in operation (manual sql management)
     show-sql: true
